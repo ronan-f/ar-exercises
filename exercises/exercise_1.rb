@@ -11,10 +11,4 @@ Store.create(:name => 'Gastown', :annual_revenue => 190000, :mens_apparel => tru
 
 puts "The number of stores is: #{Store.count}"
 
-@store1 = Store.where(id: 1).load # reference to the first store
-@store2 = Store.where(id: 2).load
-
-puts "Changing store name..."
-@store1.update(:name => 'NewName')
-
 
