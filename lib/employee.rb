@@ -4,5 +4,5 @@ class Employee < ActiveRecord::Base
     validates :first_name, presence: true
     validates :last_name, presence: true
     validates :hourly_rate, presence: true
-    validates :hourly_rate, :numericality => { :greater_than => 40, :less_than => 200 }
+    validates :hourly_rate, :numericality => { :greater_than => 39, :less_than => 201 }
 end
